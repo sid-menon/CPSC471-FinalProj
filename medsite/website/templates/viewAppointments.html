@@ -1,0 +1,35 @@
+
+{% extends "base.html" %} 
+{% block title %}View appointments{% endblock %} 
+{% block content%}
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 15px;
+    }
+</style>
+    <h1 align="centre">View appointments</h1>
+    <div align="centre" class = "form-group">
+       <table>
+        <tr>
+            <th>   Appointment id#  </th>
+            <th>   First Name    </th>
+            <th>   Last Name     </th>
+            <th>   HealthCare Number    </th>
+            <th>   Date    </th>
+            <th>   Time    </th>
+            <th>   Doctor  </th>
+        </tr>
+        {%for row in data%}
+            <tr>
+                {%for cell in row%}
+                <td>{{cell}}</td>
+                {%endfor%}
+            </tr>
+            {%endfor%}
+       </table>
+    </div>
+{% endblock %}

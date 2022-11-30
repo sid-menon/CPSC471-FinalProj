@@ -1,0 +1,64 @@
+{% extends "base.html" %} 
+{% block title %}Make appointment{% endblock %} 
+{% block content%}
+    <h1 align="centre">Make appointment</h1>
+    <form method = "POST">
+    <div align="centre" class = "form-group">
+        <label for="date">Date</label>
+        <input
+        type = "date" 
+        class="form-control" 
+        id ="date" 
+        name = "date" 
+        placeholder = "mm/dd/yyyy"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="time">Time</label>
+        <input
+        type = "time" 
+        class="form-control" 
+        id ="time" 
+        name = "time" 
+        placeholder = "xx:xx am/pm"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientHealthCare">Healthcare number</label>
+        <input
+        type = "patientHealthCare" 
+        class="form-control" 
+        id ="patientHealthCare" 
+        name = "patientHealthCare" 
+        placeholder = "xxxxx-xxxx"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientFirstName">First Name</label>
+        <input
+        type = "patientFirstName" 
+        class="form-control" 
+        id ="patientFirstName" 
+        name = "patientFirstName" 
+        placeholder = "first name"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientLastName">Last Name</label>
+        <input
+        type = "patientLastName" 
+        class="form-control" 
+        id ="patientLastName" 
+        name = "patientLastName" 
+        placeholder = "last name"/>
+    </div>
+    <div align = "centre" class = "form-group">
+        <label for "doctorLastName">Doctor Last Name</label>
+        <input
+        type = "doctorLastName"
+        class = "form-control"
+        id = "doctorLastName"
+        name = "doctorLastName"
+        placeholder = "Doctor's last name"/>
+    </div>
+    <br />
+    <button type="submit" class = "btn btn-primary">Book appointment</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% block title %}Add Patient{% endblock %} {% block content
+    %}
+    <h1 align="left">Add patient</h1>
+    <form method = "POST">
+        <div align="left" class = "form-group">
+            <label for="healthcare">Healthcare Number</label>
+            <input 
+            type = "healthcare" 
+            class="form-control" 
+            id ="healthcare" 
+            name = "healthcare" 
+            placeholder = "xxxxx-xxxx"/>
+        </div>
+    <div align="left" class = "form-group">
+        <label for="first_name">First Name</label>
+        <input 
+        type = "first_name" 
+        class="form-control" 
+        id ="first_name" 
+        name = "first_name" 
+        placeholder = "Enter first name"/>
+    </div>
+    <div align="left" class = "form-group">
+        <label for="last_name">Last Name</label>
+        <input 
+        type = "last_name" 
+        class="form-control" 
+        id ="last_name" 
+        name = "last_name" 
+        placeholder = "Enter last name"/>
+    </div>
+    <div align="left" class = "form-group">
+        <label for="dob">Date of birth</label>
+        <input 
+        type = "dob" 
+        class="form-control" 
+        id ="dob" 
+        name = "dob" 
+        placeholder = "mm/dd/yyyy"/>
+    </div>
+    <br />
+    <button align="left" type="submit" class = "btn btn-primary">Add Patient</button>
+</form>
+{% endblock %}
+<!-- <form method = "POST">
+    <h1 align="centre">Make appointment</h1>
+    <div align="centre" class = "form-group">
+        <label for="date">Date</label>
+        <input
+        type = "date" 
+        class="form-control" 
+        id ="date" 
+        name = "date" 
+        placeholder = "mm/dd/yyyy"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="time">Time</label>
+        <input
+        type = "time" 
+        class="form-control" 
+        id ="time" 
+        name = "time" 
+        placeholder = "xx:xx am/pm"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientHealthCare">Healthcare number</label>
+        <input
+        type = "patientHealthCare" 
+        class="form-control" 
+        id ="patientHealthCare" 
+        name = "patientHealthCare" 
+        placeholder = "xxxxx-xxxx"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientFirstName">First Name</label>
+        <input
+        type = "patientFirstName" 
+        class="form-control" 
+        id ="patientFirstName" 
+        name = "patientFirstName" 
+        placeholder = "first name"/>
+    </div>
+    <div align="centre" class = "form-group">
+        <label for="patientLastName">Last Name</label>
+        <input
+        type = "patientLastName" 
+        class="form-control" 
+        id ="patientLastName" 
+        name = "patientLastName" 
+        placeholder = "last name"/>
+    </div>
+</form>
+    <br />
+    <button align="left" type="submit" class = "btn btn-primary">Add Patient</button>-->
